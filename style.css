@@ -289,7 +289,7 @@ button:hover{
 .sheryianmember{
     width: 100%;
     margin-bottom: 10px;
-    height: 410px;
+    min-height: 410px;
     padding-top: 5px;
     background-color: #888;
     color: #444;
@@ -306,6 +306,7 @@ button:hover{
     background-repeat: no-repeat;
 }
 .grey{
+    min-height:60%;
     margin: 10px 0;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -652,7 +653,7 @@ button:hover{
 .sheryianmember{
     width: 100%;
     margin-bottom: 10px;
-    height: 410px;
+    height: 430px;
     padding-top: 5px;
     background-color: #888;
     color: #444;
@@ -674,7 +675,7 @@ button:hover{
     border-bottom: 1px solid grey;
     background-color: #666;
     color: #111;
-    padding: 30px 5px;
+    padding: 20px 5px;
 }
 .all{
     position: relative;
@@ -714,4 +715,13 @@ button:hover{
     .events{
         width: 80%;    
     }
+}
+
+.copyright{
+    min-height: 130px;
+}
+
+
+.padding{
+    padding: 3px 0px;
 }
