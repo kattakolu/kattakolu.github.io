@@ -6,15 +6,68 @@ body , html{
     width: 100%;
     height: 100%;
 }
-#navigation h3{
-    font-weight: 400;
-    margin-left: 30px;
-    line-height: 100px;
-    float: left;
+#navigation #logo li
+{
+    display: inline-block;
+    overflow: hidden;
+    list-style: none;
+    white-space:nowrap;
+    margin-right: 10px;
 }
-#navigation h3:hover{
+#navigation #logo li p{
+    opacity: 0;
+    color: #666;
+    max-width: 0;
+    display: inline-block;
+    text-decoration: none;
+    /* animation: movein 1.5s forwards; */
+    transition: max-width 0.5s ease-out .1s, opacity 0.5s ease-out .1s, color; */
+    font-weight: 400;
+}
+#navigation #logo li:hover p
+{
+    opacity: 1;
+    max-width: 150px;
+    transition: max-width 0.3s ease-out .1s, opacity 0.5s ease-out .1s, color .2s;
     cursor: pointer;
 }
+#navigation #logo
+{
+    float: left;
+}
+#navigation #logo li:hover
+{
+    cursor: pointer;
+    background-color: #f4efef;
+}
+#navigation #logo li img
+{
+    /* transform: translate(0px);
+    transition: transform 0.3s ease-in 0.1s; */
+    vertical-align: middle;
+}
+#navigation #logo::after
+{
+    clear: both;
+}
+#navigation #logo li p
+{
+    display: inline-block;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    padding-left: 10px;
+}
+#navigation #logo li img p
+{
+    float: right;
+    display: block;
+}
+/* #navigation #logo li:hover img
+{
+    transform: translate(-20px);
+    transition: transform 0.3s ease-in 0.1s;
+} */
 #navigation{
     position: fixed;
     width: 100%;
@@ -298,4 +351,61 @@ button:hover{
     .events{
         width: 80%;    
     }
+}
+#overlayDiv
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#logoDiv
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#logoDiv li {
+    overflow: hidden;
+    list-style: none;
+    white-space:nowrap;
+    margin-right: 10px;
+    display: inline-block;
+}
+    #logoDiv li p {
+        opacity: 0;
+        color: #666;
+        max-width: 0;
+        display: inline-block;
+        text-decoration: none;
+        animation: movein 1.5s forwards;
+        /* transition: max-width 0.5s ease-out .1s, opacity 1s ease-out .1s, color; */
+    }
+        #logoDiv li img p {
+            float:right;
+            display: block;
+            padding-right: 1em;
+        }
+    /* li:hover {}
+        li:hover p {
+            opacity: 1;
+            max-width: 150px;
+            transition: max-width 0.3s ease-out .1s, opacity 0.5s ease-out .1s, color .2s;
+        } */
+#logoDiv li img
+{
+    vertical-align: middle;
+}
+#logoDiv li p
+{
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+}
+@keyframes movein
+{
+    0%{max-width: 0;opacity: 0;}
+    /* 50%{max-width: 75px;opacity: 0.5;} */
+    100%{max-width: 150px;opacity: 1;}
 }

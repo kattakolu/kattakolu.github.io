@@ -1,3 +1,12 @@
+$(document).ready(()=>{
+  $('#overlayDiv').delay(2000).queue(function (next) { 
+    $('#logoDiv').slideUp(800);
+    $(this).slideUp(1000, function () {
+      $(this).hide();
+    });
+    next(); 
+  });
+});
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
 .not('[href="#"]')
