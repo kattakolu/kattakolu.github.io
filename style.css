@@ -409,3 +409,309 @@ button:hover{
     /* 50%{max-width: 75px;opacity: 0.5;} */
     100%{max-width: 150px;opacity: 1;}
 }
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body , html{
+    width: 100%;
+    height: 100%;
+}
+#navigation h3{
+    font-weight: 400;
+    margin-left: 30px;
+    line-height: 100px;
+    float: left;
+}
+#navigation h3:hover{
+    cursor: pointer;
+}
+#navigation{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #f4efef;
+    -webkit-box-shadow: 0px 1px 20px #999;
+            box-shadow: 0px 1px 20px #999;
+    z-index: 1111;
+    -webkit-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#navigation ul{
+    float: right;
+}
+#navigation ul li{
+    height: 100px;
+    padding: 0 30px; 
+    line-height: 100px;
+    display: inline-block;
+    color: #999;
+    list-style: none;
+    -webkit-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+#navigation ul li:hover{
+    cursor: pointer;
+    background-color: orangered;
+    color: #fff;
+}
+#navigation ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('heart.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    position: relative;
+    widows: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 11;
+}
+.herotext{
+    width: 40%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 111;
+}
+.herotext h1{
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+.herotext p{
+    font-weight: 100;
+    letter-spacing: 1.3px;
+}
+button:hover{
+    cursor: pointer;
+}
+.container{
+    margin:30px 0 30px 0;
+    font-size: 16px;
+}
+
+.user{
+    float: left;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-image: url('shery.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right{
+    margin:0.5em 0 0 0.4em;
+    float: left;
+    width: 0; 
+    height: 0; 
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    border-right:27px solid rgba(0,0,0,0.3);
+    clear: right;
+}
+.sayings{
+    margin-top: 0.5em;
+    float: left;
+    width: 70%;
+    padding: 30px 20px 10px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 70px;
+}
+.scroll{
+    width: inherit;
+    height: 330px;
+    overflow-x: hidden;
+}
+#navigation .navigationbar ul{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#navigation .navigationbar ul li{
+    display: block;
+    line-height: 50px;
+    height: 50px;
+}
+#navigation .navigationbar ul a{
+    text-decoration: none; 
+}    
+#sheryians{
+    text-align:right;
+    font-size: 42px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+.hidden{
+    display: none;
+}
+#navigation #small{
+    line-height: 100px;
+}
+#founder{
+    background-image: url('founder.jpg');
+}
+#suraj{
+    background-image: url('suraj.jpg');
+}
+#vandana{
+    background-image: url('vandana.jpg');
+}
+#dhanesh{
+    background-image: url('dhanesh.jpg');
+}
+#aprajita{
+    background-image: url('aprajita.jpg');
+}
+#ikshita{
+    background-image: url('ikshita.jpg');
+}
+#adarsh{
+    background-image: url('adarsh.jpg');
+}
+#enakshi{
+    background-image: url('enakshi.jpg');
+}
+#himanshu{
+    background-image: url('himanshu.jpg');
+}
+#manjistha{
+    background-image: url('Manjistha.jpg');
+}
+.background{
+    padding: 30px;
+    background-color: #777;
+    color: #fff;
+}
+.background p{
+    font-size: 1.2em;
+}
+.footer{
+    padding: 30px;
+    color: #e3e3e3;
+    width: 100%;
+    background-color: #444;
+}
+.footer i{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.footer i:hover{
+    color: red;
+}
+.footer p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.footer a{
+    color: yellow;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.sheryianslist{
+    padding-top: 120px;
+}
+.sheryianslist h1{
+    font-size: 32px;
+}
+#sheryiansdropped{
+    width: 100%;
+    padding: 20px;
+}
+.sheryianmember{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 410px;
+    padding-top: 5px;
+    background-color: #888;
+    color: #444;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.picture{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('shery.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grey{
+    margin: 10px 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: #666;
+    color: #111;
+    padding: 30px 5px;
+}
+.all{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.events{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+@media(max-width:780px){
+    .herotext{
+        width: 70%;
+    }
+    .sayings{
+        width: 60%;
+    }
+    #sheryians{
+        font-weight: 100;
+        font-size: 28px;
+    }
+    .full{
+        display: none;
+    }
+    #small{
+        margin-right: 20px;
+    }
+    .footer .row .col-md-4{
+        border-bottom: 1px solid grey;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .events{
+        width: 80%;    
+    }
+}
